@@ -1,0 +1,19 @@
+nav {
+    background-color: brown;
+}
+nav ul {
+    list-style-type: none;
+}
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+nav a hover {
+    background-color: #7a007a30
+}
+nav .active {
+    background-color: rgba(255, 255, 255, 0.383);
+}

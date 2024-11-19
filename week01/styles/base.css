@@ -1,11 +1,5 @@
 @import url("../../styles/base.css");
-:root   {
-    --color1 : #43114f;
-    --color2 : #b41b6b;
-    --color3 : #088aff;
-    --color4 : #efdcf6;
-    --color5 : #fffbf4;
-}
+
 
 header {
     background-color: var(--color3);

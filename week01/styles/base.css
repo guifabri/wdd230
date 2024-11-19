@@ -1,1 +1,17 @@
 @import url("../../styles/base.css");
+
+
+header {
+    background-color: var(--color3);
+    color: var(--color5);
+}
+
+body {
+    background-color: var(--color1);
+    color: var(--color4)
+}
+
+img {
+    width: 100%;
+    height: auto;
+}

@@ -30,7 +30,56 @@ nav a hover {
 nav .active {
     background-color: rgba(255, 255, 255, 0.383);
 }
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: var(--color1);
+	color: var(--color4);
+}
 
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--color5);
+}
+.navigation a:hover {
+	background-color: var(--color4);
+	color: var(--color1);
+	font-weight: 700;
+}
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+#burger {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--color5);
+ 	position: absolute;
+	top: 1 rem;
+	bottom: 1 rem;
+}
+
+#burger::before {
+	content: "☰";
+}
+
+#burger.open::before {
+	content: "❎";
+}
 .menu {
     display: flex;
     flex-direction: column;

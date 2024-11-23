@@ -4,8 +4,19 @@
     flex-direction: row;
     
 }
+#burger {
+		display: none; /* hide hamburger button */
+	}
     .cards {
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
+    .navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
 }

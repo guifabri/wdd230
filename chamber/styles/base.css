@@ -6,3 +6,8 @@
     --color5 : #fffbf4;
 }
 
+img {
+    width: 8rem;
+    aspect-ratio: 4/3;
+    height: auto;
+}

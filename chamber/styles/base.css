@@ -12,7 +12,14 @@
 body {
     padding: 0 0.5rem;
 }
-
+.logo{
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+    width: 3rem;
+    height: 3rem;
+    aspect-ratio: 4/3;
+}
 h1 {
     text-align: center;
 }
@@ -27,32 +34,84 @@ img {
     -o-border-radius: 25px;
 }
 nav {
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--color1);
-    font-size: 0.8rem;
+    background-color: var(--color3);
 }
+
 nav ul {
-    display: flex;
-    flex-direction: row;
     list-style: none;
 }
-
-
 nav a {
     display: block;
-    color: var(--color5);
+    color: var(--color1);
     text-align: center;
     padding: .5rem;
     text-decoration: none;
 }
-nav a:hover {
-    background-color: var(--color1);
+nav a hover {
+    background-color: var(--color4);
 }
 nav .active {
     background-color: rgba(255, 255, 255, 0.383);
+}
+.navigation {
+	display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	list-style: none;
+	background-color: var(--color1);
+	color: var(--color4);
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: var(--color5);
+}
+.navigation a:hover {
+	background-color: var(--color4);
+	color: var(--color1);
+	font-weight: 700;
+}
+#mode {
+	position: fixed;
+	top: 5rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 2rem;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+#burger {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: var(--color5);
+	text-align: left;
+	top: 1rem;
+	bottom: 1rem;
+}
+
+#burger::before {
+	content: "☰";
+}
+
+#burger.open::before {
+	content: "❎";
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.menutwo {
+    display: flex;
+    flex-direction: row;
 }
 .hero {
     display: grid;
@@ -110,4 +169,9 @@ footer{
     -moz-border-radius: 25px 25px 25px 25px;
     -ms-border-radius: 25px 25px 25px 25px;
     -o-border-radius: 25px 25px 25px 25px;
+}
+.menutwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
 }

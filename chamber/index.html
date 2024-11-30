@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/normalize.css">    
+    <link rel="stylesheet" href="styles/normalize.css">    
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <meta name="description" content="WDD 230 - Web Frontend Development Erick Scala course assignment portal. Visit our beautiful city and discover its wonders">
@@ -18,14 +18,13 @@
 </head>
 <body>
     <header>
-        
         <nav>
             <ul>
-                <li><img src="images/#" alt="logo"></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="../chamber/index.html">Chamber</a></li>
-                <li><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
-                <li><a href="#">Form</a></li>
+                <li class="active"><img src="images/#" alt="logo"></li>
+                <li class="active"><a href="../index.html">Home</a></li>
+                <li class="active"><a href="../chamber/index.html">Chamber</a></li>
+                <li class="active"><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
+                <li class="active"><a href="#">Form</a></li>
             </ul>
             <ul>
                 <li><button>Sign up</button></li>
@@ -36,24 +35,23 @@
     <main>
         <h1>San Antonio Chamber of Commerce</h1>
         <section class="hero">
-            <div class="card">
-                <h2>Join to San Antonio Chamber of Commerce</h2>
+            <div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div>
-                    <button></button>
-                    <button></button>
+                <div class="button_sign">
+                    <button>Sign in</button>
+                    <button>Sign up</button>
                 </div>
             </div>
             <div class="card">
                 <img src="images/San-Antonio-del-Tachira-1.jpg" alt="Hero image">
             </div>
         </section>
-        <section>
+        <section class="current">
             <h2>We already started classes today at 7:00 pm</h2>
-            <img src="images/banner4.jpeg" alt="">
+            <img src="images/banner4.jpeg" alt="img">
             <p>We have already started our B2 level classes, which prepare our students to improve their English and thus lead them towards new opportune opportunities for academic and professional development.</p>
         </section>
-        <section>
+        <section class="weathering">
             <h4>Weather Right Now</h4>
             <div id="weather">
                 <p id="location"></p>
@@ -74,22 +72,19 @@
         <section class="galeryTitle">
             <h2>Benjamin academy</h2>
             <div class="galeryImage">
-                
                 <img src="images/banner3.png" alt="img">
                 <img src="images/banner1.jpg" alt="img">
                 <img src="images/banner4.jpeg" alt="img">
                 <img src="images/banner5.jpeg" alt="img">
-                <img src="images/banner2.jpg" alt="img">
+                <img src="images/banner2.jpg" alt="img" class="final">
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            
         </section>
     </main>
     <footer>
         <div>
-            
             <ul>
-                <li class="title">contact us</li>
+                <li class="title">Contact Us</li>
                 <li>Tlf: 5555555</li>
                 <li>Tlf: 4444444</li>
                 <li>email: xxxx@gmail.com</li>

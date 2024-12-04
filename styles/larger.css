@@ -19,5 +19,8 @@
 		display: block;
 		flex: 1 1 100%;
 	}
-    
+    .hero div {
+        top: 25rem;
+        left: 30rem;
+    }
 }

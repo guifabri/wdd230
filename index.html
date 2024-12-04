@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Erick Scala" width="100" height="114">
+        <img src="images/profile.webp" alt="Erick Scala" width="100" height="114">
         <span>Erick Scala</span>
         
         <nav class="navigation">
@@ -41,6 +41,14 @@
    
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
+        <div class="hero">
+            <picture>
+                    <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                    <source media="(max-width: 960px)" srcset="images/hero-medium.webp">
+                    <img src="images/hero-large.webp" alt="table setting" width="1000" height="500">
+            </picture>
+            <div>San Diego Temple</div>
+        </div>
         <div class="cards">
             <section class="card">
             <h2>Learning Activities</h2>
@@ -53,13 +61,19 @@
             </section>
             <section class="card">
                 <h2>Information</h2>
+                <div class="visits">Number of visits: <span class="counter"></span></div>
             </section>
         </div>
+        <div>
+            <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63243.15149811148!2d-72.48307799544031!3d7.821864002797466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6646c2b527cf03%3A0xa6ed695f36cd4221!2sSan%20Antonio%20del%20T%C3%A1chira%205007%2C%20T%C3%A1chira%2C%20Venezuela!5e0!3m2!1ses!2sus!4v1733274106412!5m2!1ses!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </main>
+    
     <footer>
         <p>&copy; <span id="currentYear"></span> Erick Scala, Venezuela</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/visitCounter.js"></script>
 </body>
 </html>

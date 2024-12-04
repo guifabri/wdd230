@@ -9,6 +9,11 @@
 * {
     font-family: "Poppins", sans-serif;
 }
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 nav {
     background-color: var(--color3);
@@ -88,11 +93,63 @@ main {
     width: 80%;
     margin: auto;
 }
+.hero {
+	display: flex;
+	justify-content: center;
+}
+.hero div {
+	position: absolute;
+	top: 25rem;
+	left: 5rem;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	text-wrap: nowrap;
+}
+.hero picture {
+	filter: drop-shadow(0 0 0.65rem var(--color1));
+	-webkit-filter: drop-shadow(0 0 0.65rem var(--color1));
+}
+.visits {
+	font-size: 2rem;
+	font-weight: bolder;
+	border: 6px var(--color4) ridge;
+	width: 60%;
+	justify-self: center;
+	background: var(--color2);
+	color: var(--color5);
+	border-radius: 15px;
+	padding: 1.2rem;
+	filter: drop-shadow(0 0 0.65rem var(--color1));
+	-webkit-filter: drop-shadow(0 0 0.65rem var(--color1));
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
 
 .cards {
     display: grid;
     grid-template-columns: 100%;
+	
 }
 .links {
     list-style: none;
+}
+iframe {
+	width: 100%;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+	-o-border-radius: 20px;
+	filter: drop-shadow(0 0 0.65rem var(--color1));
+	-webkit-filter: drop-shadow(0 0 0.65rem var(--color1));
+	margin-top: 2rem;
+}
+footer {
+	text-align: center;
+
 }

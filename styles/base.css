@@ -97,6 +97,9 @@ main {
 	display: flex;
 	justify-content: center;
 }
+.hero img {
+	object-fit: cover;
+}
 .hero div {
 	position: absolute;
 	top: 25rem;

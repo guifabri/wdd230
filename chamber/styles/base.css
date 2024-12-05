@@ -159,10 +159,13 @@ ul {
 .title {
     font-weight: bolder;
 }
-main {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    
+.discoverMain {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        
+    }
+.discoverTitle {
+    grid-column: 1/3;
 }
 .sidebar p {
     text-align: center;

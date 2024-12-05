@@ -6,7 +6,6 @@
     --color5 : #fffbf4;
 }
 * {
-    
     font-family: "Poppins", sans-serif;
 }
 body {
@@ -160,6 +159,60 @@ ul {
 .title {
     font-weight: bolder;
 }
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+.sidebar p {
+    text-align: center;
+}
+.sidebar section {
+    margin-top: 1rem;
+    padding: 0.2rem;
+    border: #43114f 4px ridge;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+figure {
+    
+    margin: 5%;
+}
+
+figcaption {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+#lvd {
+    border: var(--color5) 1px solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer{
     margin-top: 1rem;
     padding: 2rem;

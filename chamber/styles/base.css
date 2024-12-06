@@ -19,19 +19,6 @@ body {
     height: 3rem;
     aspect-ratio: 4/3;
 }
-h1 {
-    text-align: center;
-}
-img {
-    width: 100%;
-    aspect-ratio: 4/3;
-    height: auto;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-}
 nav ul {
     list-style: none;
 }
@@ -104,15 +91,28 @@ nav .active {
     grid-column: 1/4;
     grid-row: 2/3;
 }
-.menutwo {
-    display: flex;
-    flex-direction: row;
+
+.menutwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+h1 {
+    text-align: center;
+}
+img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    height: auto;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
 }
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
-
 }
 .hero h2 {
     grid-column: span 2;
@@ -221,8 +221,4 @@ footer{
     -ms-border-radius: 25px 25px 25px 25px;
     -o-border-radius: 25px 25px 25px 25px;
 }
-.menutwo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 
-}

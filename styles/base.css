@@ -9,20 +9,30 @@
 * {
     font-family: "Poppins", sans-serif;
 }
-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
 
-.profile span {
+* {
+    font-family: "Poppins", sans-serif;
+}
+body {
+    padding: 0 0.5rem;
+}
+.logo{
+    position: absolute;
+    top: 1rem;
+    left: 4rem;
+    width: 3rem;
+    height: 3rem;
+    aspect-ratio: 4/3;
+	object-fit: cover;
+}
+.myName {
 	position: absolute;
-	top: 6rem;
-	left: 0.5rem;
-	border: var(--color1) 1px solid;
+	top: 3.3rem;
+	left: 3.9rem;
+	font-size: 0.6rem;
+	background-color: var(--color1);
 	filter: drop-shadow(0 0 0.65rem var(--color1));
-	-webkit-filter: drop-shadow(0 0 0.65rem var(--color1));
-	background: var(--color1);
+	-webkit-filter: drop-shadow(0 0 0.65rem var(--color4));
 }
 nav ul {
     list-style: none;
@@ -41,12 +51,11 @@ nav .active {
     background-color: rgba(255, 255, 255, 0.383);
 }
 .navigation {
-	display: flex;
-	flex-direction: column;
+	display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
 	list-style: none;
 	background-color: var(--color1);
 	color: var(--color4);
-	align-items: center;
 }
 
 .navigation a {
@@ -62,8 +71,8 @@ nav .active {
 	font-weight: 700;
 }
 #mode {
-	position: absolute;
-	top: 1rem;
+	position: fixed;
+	top: 5rem;
 	right: 1rem;
 	font-size: 3rem;
 	cursor: pointer;
@@ -94,7 +103,15 @@ nav .active {
 .menu {
     display: flex;
     flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 2/3;
 }
+
+.menutwo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 main {
     width: 80%;
     margin: auto;
@@ -108,7 +125,7 @@ main {
 }
 .hero div {
 	position: absolute;
-	top: 25rem;
+	top: 35rem;
 	left: 5rem;
 	background: radial-gradient(#fff, #4D5B97);
 	border: 1px solid rgba(0,0,0,.75);

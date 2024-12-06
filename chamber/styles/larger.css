@@ -134,6 +134,7 @@
     }
     
     .gallery {
+        grid-row: 1;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -155,7 +156,7 @@
         -webkit-filter: drop-shadow(0 0 0.75rem var(--color1));
 }
     .sidebar {
-        
+        grid-row: 1;
         margin: 0;
         margin-top: 1.2rem;
     }
@@ -165,5 +166,10 @@
     .weathering figure {
         margin: auto;
         margin-bottom: 1rem;
+    }
+    .discoverMain {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        
     }
 }

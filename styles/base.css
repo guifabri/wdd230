@@ -15,10 +15,15 @@ body {
 	justify-content: center;
 }
 
-nav {
-    background-color: var(--color3);
+.profile span {
+	position: absolute;
+	top: 6rem;
+	left: 0.5rem;
+	border: var(--color1) 1px solid;
+	filter: drop-shadow(0 0 0.65rem var(--color1));
+	-webkit-filter: drop-shadow(0 0 0.65rem var(--color1));
+	background: var(--color1);
 }
-
 nav ul {
     list-style: none;
 }
@@ -29,7 +34,7 @@ nav a {
     padding: .5rem;
     text-decoration: none;
 }
-nav a hover {
+nav a:hover {
     background-color: var(--color4);
 }
 nav .active {
@@ -41,6 +46,7 @@ nav .active {
 	list-style: none;
 	background-color: var(--color1);
 	color: var(--color4);
+	align-items: center;
 }
 
 .navigation a {

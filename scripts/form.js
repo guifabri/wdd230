@@ -18,4 +18,9 @@ function checkSame() {
 		kp2.style.backgroundColor = "#fff";
 		kp2.style.color = "#000";
 	}
+    
+
 }
+function updateRatingValue(value) {
+        document.getElementById('ratingValue').textContent = value;
+    }

@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="chamber/styles/normalize.css">    
-    <link rel="stylesheet" href="chamber/styles/base.css">
-    <link rel="stylesheet" href="chamber/styles/larger.css">
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/normalize.css">    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="../styles/form.css">
     <meta name="description" content="WDD 230 - Web Frontend Development Erick Scala Form">
     <meta name="author" content="Erick Scala - WDD 230 - Web Frontend Development">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,13 +23,14 @@
     <header>
         <nav class="navigation">
             <button id="burger"></button>
-            <img class="logo" src="chamber/images/logo.png" alt="logo">
+            <img class="logo" src="images/logo.png" alt="logo">
             <ul class="menu">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="active"><a href="chamber/index.html">Chamber</a></li>
-                <li class="active"><a href="chamber/discover.html">Discover</a></li>
-                <li class="active"><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-                <li class="active"><a href="#">Form</a></li>
+                <li class="active"><a href="../index.html">Home</a></li>
+                <li class="active"><a href="../chamber/index.html">Chamber</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
+                <li class="active"><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
+                <li class="active"><a href="../form.html">Form</a></li>
+                <li class="active"><a href="../chamber/join.html">Join</a></li>
             </ul>
             <ul class="menutwo">
                 <li><button>Sign up</button></li>
@@ -38,25 +39,23 @@
         </nav>
     </header>
     <main>
-        
+        <div id="formmessage"></div>
         <form method="get" class="form-example" action="record.html">
-            <label for="username">Username</label>
+            <label for="username">First name</label>
             <input type="text" id="username" name="username" required>
-            <label for="psswd">Password</label>
+            <label for="psswd">Last name</label>
             <input type="password" id="psswd" name="psswd" pattern="[a-zA-Z0-9]{8,}" title="Password must containt at least eight characters including letters and numbers" required>
-            <label for="psswdconf">Confirm password</label>
+            <label for="psswdconf">Title or position</label>
             <input type="password" id="psswdconf" name="psswdconf" pattern="[a-zA-Z0-9]{8,}" title="Password must containt at least eight characters including letters and numbers" required>
-            <div id="formmessage"></div>
-            
-            <label for="email">Enter your e-mail</label>
-            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" title="Please enter a valid email address" required>
-            <label for="rating">Page Rating</label>
-            <input type="range" id="rating" name="rating" min="0" max="10" step="1" oninput="updateRatingValue(this.value)">
-            <span id="ratingValue">5</span>
+            <label for="email">email address</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required>
+            <label for="rating">Mobile phone number</label>
+            <input type="range" id="rating" name="rating" min="0"
+            max="10" step="1">
+            <label for="rating">Business/organization's name</label>
+            <input type="range" id="rating" name="rating" min="0"
+            max="10" step="1">
             <button class="btn" type="submit">Send</button>
-
-        </form>
-
     </main>
     <footer>
         <div>
@@ -82,8 +81,7 @@
         <p>&copy; <span id="currentYear"></span> Erick Scala, Venezuela, Wdd230 Chamber site project </p>
         <p id="lastModified"></p>
     </footer>
-    <script src="../chamber/scripts/burger.js"></script>
-    <script src="../chamber/scripts/weather.js"></script>
-    <script src="scripts/form.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

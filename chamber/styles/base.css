@@ -229,10 +229,7 @@ footer{
     background-color: var(--color4);
     border: 6px var(--color1) solid;
     border-radius: 15px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    
 }
 
 

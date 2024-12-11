@@ -1,8 +1,7 @@
 function updateDate() {
     const today =new Date()
     document.getElementById("timestamp").innerHTML = today;
-    alert(document.getElementById("timestamp").innerHTML);
-
+    
 }
 
 function membershipCost(value) {
@@ -65,6 +64,7 @@ function membershipCost(value) {
     document.getElementById('membershipDescription').innerHTML = descriptions[value] || "";
 }
 
+updateDate();
 
 
 

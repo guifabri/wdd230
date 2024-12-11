@@ -5,6 +5,10 @@
     --color4 : #efdcf6;
     --color5 : #fffbf4;
 }
+
+form * {
+  width: 100%;
+}
     
 .form-example input, .form-example {
   border: 1px solid;
@@ -55,3 +59,9 @@
   font-weight: bold;
 
 }
+.formJoin {
+  margin: auto;
+  width: 80%;
+}
+
+

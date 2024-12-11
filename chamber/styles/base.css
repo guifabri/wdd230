@@ -221,4 +221,18 @@ footer{
     -ms-border-radius: 25px 25px 25px 25px;
     -o-border-radius: 25px 25px 25px 25px;
 }
+#membershipDescription {
+  margin-top: 2rem;
+}
+.thankyouMain section {
+    margin-top: 2rem;
+    background-color: var(--color4);
+    border: 6px var(--color1) solid;
+    border-radius: 15px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+
 

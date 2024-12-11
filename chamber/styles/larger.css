@@ -11,7 +11,7 @@
         font-size: 1.4rem;
         margin: auto;
         text-align: center;
-        /*border: #088aff 2px solid;*/
+       /* border: #088aff 2px solid;*/
     }
     .logo{
     position: absolute;
@@ -175,4 +175,18 @@
         grid-template-columns: 1fr 4fr;
         
     }
+    .joinMain {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #membershipDescription {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100%;
+  margin-bottom: 4rem;
+}
+.membership-level {
+  grid-row: 3/4;
+}
 }

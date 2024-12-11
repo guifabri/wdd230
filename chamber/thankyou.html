@@ -38,58 +38,10 @@
             </ul>
         </nav>
     </header>
-    <main class="joinMain">
-       <form action="thankyou.html" method="get" class="form-example formJoin" onsubmit="updateDate()">
-             <!-- Applicant's First Name -->
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" required>
-
-            <!-- Applicant's Last Name -->
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" required>
-
-           <!-- Applicant's Title or Position -->
-            <label for="title">Title/Position</label>
-            <input type="text" id="title" name="title" 
-                    pattern="[a-zA-Z0-9\-]{7,}" 
-                    title="Only letters, numbers, and hyphens are allowed. Minimum 7 characters." 
-                    required>
-
-
-            <!-- Applicant's Email Address -->
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" 
-                placeholder="example@example.com" 
-                required>
-
-            <!-- Mobile Phone Number -->
-            <label for="phone">Mobile Phone Number</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <!-- Business/Organization's Name -->
-            <label for="businessName">Business/Organization Name</label>
-            <input type="text" id="businessName" name="businessName" required>
-
-            <label for="membershipLevel">Membership Level</label>
-            <select id="membershipLevel" name="membershipLevel" required onchange="membershipCost(this.value)">
-                <option value="" disabled selected>Select a membership level</option>
-                <option value="np">NP Membership (No fee, for non-profit organizations)</option>
-                <option value="bronze">Bronze Membership</option>
-                <option value="silver">Silver Membership</option>
-                <option value="gold">Gold Membership</option>
-            </select>
-            <!-- Business/Organization's Description -->
-            <label for="description">Business/Organization Description</label>
-            <textarea id="description" name="description" required></textarea>
-
-            <!-- Timestamp -->
-            <input type="hidden" id="timestamp" name="timestamp" >
-            <!-- Submit Button -->
-            <input type="submit" value="Submit Form">
-
-       </form>
-       <div class="formJoin" id="membershipDescription"></div>
-
+    <main class="thankyouMain">
+        <section>
+            <h1>Congratulations for submiting this form</h1>
+        </section>
     </main>
     <footer>
         <div>

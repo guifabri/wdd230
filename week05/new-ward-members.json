@@ -1,0 +1,29 @@
+{
+"familyName": "Infante",
+"moveInDate": "08-18-2024",
+"numberOfPeople": 4,
+"visitedByBishopric": true,
+"familyMembers": [
+    {
+        "name": "John Infante",
+        "gender": "Male",
+        "birthdate": "01-01-1970"
+    },
+    {
+        "name": "Jane Infante",
+        "gender": "Female",
+        "birthdate": "02-02-1975"
+    },
+    {
+        "name": "Emily Infante",
+        "gender": "Female",
+        "birthdate": "03-03-1975"
+    },
+    {
+        "name": "Michael Infante",
+        "gender": "Male",
+        "birthdate": "04-04-1975"
+    }
+]
+}
+

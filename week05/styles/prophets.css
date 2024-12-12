@@ -1,0 +1,15 @@
+img {
+    width: 100%;
+}
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    
+}
+.card {
+    border: 20px ridge black;
+    padding: 1rem;
+    background-color: rgb(241, 198, 198);
+    
+}

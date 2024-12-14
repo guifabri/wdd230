@@ -43,8 +43,8 @@ function displayMembers(membersData, view) {
         }
         else{
             card.innerHTML = `
-            <img src="${member.icon}" alt="${member.name}">
-            <div>
+            <div class="list-card">
+                <span><img src="${member.icon}" alt="${member.name}"></span>
                 <span>${member.name}</span>
                 <span>${member.addresses.join(", ")}</span>
                 <span>${member.phoneNumbers.join(", ")}</span>

@@ -13,7 +13,7 @@
       "https://www.google.com",
       "https://about.google"
     ],
-    "icon": "google-logo.png",
+    "icon": "https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Google-512.png",
     "membershipLevel": "Platinum",
     "industry": "Technology"
   },

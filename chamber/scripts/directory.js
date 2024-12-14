@@ -28,18 +28,32 @@ function displayMembers(membersData, view) {
 
         // Crear lista de enlaces para todos los `websiteURLs`
         const linksHTML = member.websiteURLs
-            .map(url => `<a href="${url}" target="_blank">Visit</a>`)
+            .map(url => `<a href="${url}" target="_blank">${url}</a>`)
             .join(" | ");
-
-        card.innerHTML = `
-            <img src="images/${member.icon}" alt="${member.name}">
+        if(view==="grid"){
+            card.innerHTML = `
+            <img src="${member.icon}" alt="${member.name}">
             <h3>${member.name}</h3>
             <p><strong>Address:</strong> ${member.addresses.join(", ")}</p>
             <p><strong>Phone:</strong> ${member.phoneNumbers.join(", ")}</p>
             <p><strong>Websites:</strong> ${linksHTML}</p>
             <p><strong>Membership:</strong> ${member.membershipLevel}</p>
             <p><strong>Industry:</strong> ${member.industry}</p>
-        `;
+            `;
+        }
+        else{
+            card.innerHTML = `
+            <img src="${member.icon}" alt="${member.name}">
+            <div>
+                <span>${member.name}</span>
+                <span>${member.addresses.join(", ")}</span>
+                <span>${member.phoneNumbers.join(", ")}</span>
+                <span>${linksHTML}</span>
+                <span>${member.membershipLevel}</span>
+                <span>${member.industry}</span>
+            </div>
+            `;
+        }
 
         container.appendChild(card);
     });

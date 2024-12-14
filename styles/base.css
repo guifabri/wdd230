@@ -8,6 +8,7 @@
 
 * {
     font-family: "Poppins", sans-serif;
+	
 }
 
 * {
@@ -193,4 +194,17 @@ footer {
 h3 {
   margin-top: 1rem;
   font-weight: bold;
+}
+.weathering {
+	margin-top: 2rem;
+	background-color: var(--color1);
+	color: var(--color4);
+	text-align: center;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	padding: 1rem;
+	filter: drop-shadow(0 0 0.65rem var(--color1));
 }

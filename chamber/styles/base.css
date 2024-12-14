@@ -232,4 +232,40 @@ footer{
     border-radius: 15px;
     
 }
-
+/*-------------------------------------*/
+.view-toggle {
+    width: 50%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.grid-view{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content:center ;
+    row-gap: 2rem;
+    column-gap: 1.2rem;
+    margin-bottom: 4rem;
+    
+}
+.list-view {
+    display: block;
+}
+.member-card {
+    text-align: center;
+    height: 100%;
+    border: 5px ridge var(--color1);
+    background-color: var(--color4);
+    border-radius: 20px;
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#members-container img {
+    width: 48px;
+    height: 48px;
+    aspect-ratio: 1/1;
+}

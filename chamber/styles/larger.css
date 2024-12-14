@@ -226,9 +226,5 @@
     height: 48px;
     aspect-ratio: 1/1;
 }
-.list-card
-{
-    display: grid;
-    grid-template-columns: repeat(7,fr);
-}
+
 }

@@ -45,12 +45,12 @@ function displayMembers(membersData, view) {
             card.innerHTML = `
             <div class="list-card">
                 <span><img src="${member.icon}" alt="${member.name}"></span>
-                <span>${member.name}</span>
-                <span>${member.addresses.join(", ")}</span>
-                <span>${member.phoneNumbers.join(", ")}</span>
-                <span>${linksHTML}</span>
-                <span>${member.membershipLevel}</span>
-                <span>${member.industry}</span>
+                <span> --- ${member.name}</span>
+                <span> --- ${member.addresses.join(", ")}</span>
+                <span> --- ${member.phoneNumbers.join(", ")}</span>
+                <span> --- ${linksHTML}</span>
+                <span> --- ${member.membershipLevel}</span>
+                <span> --- ${member.industry}</span>
             </div>
             `;
         }

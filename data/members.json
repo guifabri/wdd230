@@ -48,7 +48,7 @@
       "https://www.amazon.com",
       "https://developer.amazon.com"
     ],
-    "icon": "amazon-logo.png",
+    "icon": "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/amazon-256.png",
     "membershipLevel": "Gold",
     "industry": "E-commerce"
   },
@@ -66,7 +66,7 @@
       "https://www.apple.com",
       "https://developer.apple.com"
     ],
-    "icon": "apple-logo.png",
+    "icon": "https://cdn4.iconfinder.com/data/icons/proglyphs-free/512/Apple-256.png",
     "membershipLevel": "Platinum",
     "industry": "Technology"
   },
@@ -82,7 +82,7 @@
     "websiteURLs": [
       "https://www.tesla.com"
     ],
-    "icon": "tesla-logo.png",
+    "icon": "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/tesla-256.png",
     "membershipLevel": "Gold",
     "industry": "Automotive"
   },
@@ -100,7 +100,7 @@
       "https://www.coca-colacompany.com",
       "https://www.coca-cola.com"
     ],
-    "icon": "coca-cola-logo.png",
+    "icon": "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/cocacola-256.png",
     "membershipLevel": "Silver",
     "industry": "Beverage"
   },
@@ -117,7 +117,7 @@
       "https://www.nike.com",
       "https://about.nike.com"
     ],
-    "icon": "nike-logo.png",
+    "icon": "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/nike-256.png",
     "membershipLevel": "Silver",
     "industry": "Sportswear"
   }

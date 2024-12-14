@@ -179,3 +179,18 @@ footer {
 	text-align: center;
 
 }
+.week-links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.week-links li {
+  display: inline;
+  margin-right: 10px;
+}
+
+h3 {
+  margin-top: 1rem;
+  font-weight: bold;
+}

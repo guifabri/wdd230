@@ -3,7 +3,7 @@ const gridBtn = document.getElementById("gridBtn");
 const listBtn = document.getElementById("listBtn");
 
 // URL del JSON
-const jsonURL = "URL_DEL_JSON"; // Reemplaza esto con la URL real
+const jsonURL = "https://raw.githubusercontent.com/guifabri/wdd230/refs/heads/main/data/members.json"; // Reemplaza esto con la URL real
 
 // Función para obtener JSON desde la URL
 async function fetchMembers() {

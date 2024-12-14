@@ -8,18 +8,29 @@ async function getLinks() {
 }
 
 function displayLinks(data) {
-  const linksContainer = document.querySelector("ul.links"); // Selecciona el ul con la clase "links"
+  const linksContainer = document.querySelector("ul.links"); // Selecciona el contenedor de enlaces
 
   data.weeks.forEach((week) => {
-    // Para cada semana, recorre sus enlaces
+    // Crea un encabezado para la semana
+    const weekHeader = document.createElement("h3");
+    weekHeader.textContent = week.week;
+
+    // Crea una lista para los enlaces de la semana
+    const weekList = document.createElement("ul");
+    weekList.classList.add("week-links");
+
     week.links.forEach((link) => {
       const li = document.createElement("li");
       const a = document.createElement("a");
       a.href = `${baseURL}${link.url}`; // Construye la URL completa
       a.textContent = link.title; // Título del enlace
       li.appendChild(a);
-      linksContainer.appendChild(li); // Agrega el <li> al contenedor
+      weekList.appendChild(li); // Agrega el <li> a la lista
     });
+
+    // Agrega el encabezado y la lista de la semana al contenedor principal
+    linksContainer.appendChild(weekHeader);
+    linksContainer.appendChild(weekList);
   });
 }
 

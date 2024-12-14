@@ -252,6 +252,7 @@ footer{
     display: block;
 }
 .member-card {
+    font-size: 0.8rem;
     text-align: center;
     height: 100%;
     border: 5px ridge var(--color1);

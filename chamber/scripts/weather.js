@@ -1,11 +1,5 @@
-// https://openweathermap.org/current
-// https://openweathermap.org/weathermap
-// API key: 0aec6412eede92415f476e7030db63f4
 const apiKey = "eab4722df416e8205ba55ea74c45e341";
-// AVONDALE ARIZONA
-// 33.44450069074283, -112.35577444568536
-// Litchfield Park Arizona
-// 33.49531346879897, -112.35600589274492
+
 
 const lat = 7.813558;
 const lon = -72.444585;

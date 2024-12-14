@@ -1,0 +1,124 @@
+[
+  {
+    "name": "Google LLC",
+    "addresses": [
+      "1600 Amphitheatre Parkway, Mountain View, CA, 94043",
+      "111 8th Avenue, New York, NY, 10011"
+    ],
+    "phoneNumbers": [
+      "+1-650-253-0000",
+      "+1-212-565-0000"
+    ],
+    "websiteURLs": [
+      "https://www.google.com",
+      "https://about.google"
+    ],
+    "icon": "google-logo.png",
+    "membershipLevel": "Platinum",
+    "industry": "Technology"
+  },
+  {
+    "name": "Microsoft Corporation",
+    "addresses": [
+      "1 Microsoft Way, Redmond, WA, 98052",
+      "701 5th Avenue, Seattle, WA, 98104"
+    ],
+    "phoneNumbers": [
+      "+1-425-882-8080",
+      "+1-206-709-3100"
+    ],
+    "websiteURLs": [
+      "https://www.microsoft.com",
+      "https://news.microsoft.com"
+    ],
+    "icon": "microsoft-logo.png",
+    "membershipLevel": "Platinum",
+    "industry": "Technology"
+  },
+  {
+    "name": "Amazon.com Inc.",
+    "addresses": [
+      "410 Terry Avenue North, Seattle, WA, 98109",
+      "2021 7th Avenue, Seattle, WA, 98121"
+    ],
+    "phoneNumbers": [
+      "+1-888-280-4331"
+    ],
+    "websiteURLs": [
+      "https://www.amazon.com",
+      "https://developer.amazon.com"
+    ],
+    "icon": "amazon-logo.png",
+    "membershipLevel": "Gold",
+    "industry": "E-commerce"
+  },
+  {
+    "name": "Apple Inc.",
+    "addresses": [
+      "1 Apple Park Way, Cupertino, CA, 95014",
+      "867 Boylston Street, Boston, MA, 02116"
+    ],
+    "phoneNumbers": [
+      "+1-408-996-1010",
+      "+1-800-692-7753"
+    ],
+    "websiteURLs": [
+      "https://www.apple.com",
+      "https://developer.apple.com"
+    ],
+    "icon": "apple-logo.png",
+    "membershipLevel": "Platinum",
+    "industry": "Technology"
+  },
+  {
+    "name": "Tesla, Inc.",
+    "addresses": [
+      "3500 Deer Creek Road, Palo Alto, CA, 94304",
+      "901 Page Avenue, Fremont, CA, 94538"
+    ],
+    "phoneNumbers": [
+      "+1-650-681-5000"
+    ],
+    "websiteURLs": [
+      "https://www.tesla.com"
+    ],
+    "icon": "tesla-logo.png",
+    "membershipLevel": "Gold",
+    "industry": "Automotive"
+  },
+  {
+    "name": "The Coca-Cola Company",
+    "addresses": [
+      "1 Coca Cola Plaza NW, Atlanta, GA, 30313",
+      "711 5th Avenue, New York, NY, 10022"
+    ],
+    "phoneNumbers": [
+      "+1-404-676-2121",
+      "+1-800-438-2653"
+    ],
+    "websiteURLs": [
+      "https://www.coca-colacompany.com",
+      "https://www.coca-cola.com"
+    ],
+    "icon": "coca-cola-logo.png",
+    "membershipLevel": "Silver",
+    "industry": "Beverage"
+  },
+  {
+    "name": "Nike, Inc.",
+    "addresses": [
+      "1 Bowerman Drive, Beaverton, OR, 97005",
+      "45 Grand Street, New York, NY, 10013"
+    ],
+    "phoneNumbers": [
+      "+1-503-671-6453"
+    ],
+    "websiteURLs": [
+      "https://www.nike.com",
+      "https://about.nike.com"
+    ],
+    "icon": "nike-logo.png",
+    "membershipLevel": "Silver",
+    "industry": "Sportswear"
+  }
+]

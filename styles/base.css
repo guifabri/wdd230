@@ -71,6 +71,11 @@ nav .active {
 	color: var(--color1);
 	font-weight: 700;
 }
+.register {
+	position: absolute;
+	right: 0.5rem;
+	top: 0.5rem;
+}
 #mode {
 	position: fixed;
 	top: 5rem;

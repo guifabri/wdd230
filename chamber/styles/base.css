@@ -296,16 +296,18 @@ footer{
     width: 5.5rem;
 }
 #banner {
+
     background-color:var(--color3);
     color: var(--color4);
     text-align: center;
-    padding: 1rem;
+    padding: 0.25rem;
     position: fixed;
     bottom: 0;
     width: 100%;
     z-index: 1000;
     font-family: 'Poppins', sans-serif;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -314,9 +316,12 @@ footer{
     display: none;
 }
 
-#banner p {
-    margin: 0;
+#banner div {
+    padding-top: 0.25rem;
+    margin: auto;
+    padding: 0;
     font-size: 1.2rem;
+
 }
 
 .close-btn {

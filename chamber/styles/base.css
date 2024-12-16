@@ -19,6 +19,7 @@ body {
     width: 3rem;
     height: 3rem;
     aspect-ratio: 4/3;
+	object-fit: cover;
 }
 nav ul {
     list-style: none;
@@ -55,6 +56,11 @@ nav .active {
 	background-color: var(--color4);
 	color: var(--color1);
 	font-weight: 700;
+}
+.register {
+	position: absolute;
+	right: 0.5rem;
+	top: 0.5rem;
 }
 #mode {
 	position: fixed;
@@ -269,4 +275,23 @@ footer{
     width: 48px;
     height: 48px;
     aspect-ratio: 1/1;
+}
+.forecast {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    background-color: var(--color2);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 0.2rem;
+}
+.weathering *{
+    text-align: center;
+}
+
+.spotlight img {
+    width: 5.5rem;
 }

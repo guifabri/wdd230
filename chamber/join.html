@@ -53,7 +53,7 @@
            <!-- Applicant's Title or Position -->
             <label for="title">Title/Position</label>
             <input type="text" id="title" name="title" 
-                    pattern="[a-zA-Z0-9\-]{7,}" 
+                    pattern="[a-zA-Z0-9\- ]{7,}"
                     title="Only letters, numbers, and hyphens are allowed. Minimum 7 characters." 
                     required>
 
@@ -87,7 +87,7 @@
             <!-- Timestamp -->
             <input type="hidden" id="timestamp" name="timestamp" >
             <!-- Submit Button -->
-            <input type="submit" value="Register">
+            <input class="link-join" type="submit" value="Register">
 
        </form>
        <div class="formJoin" id="membershipDescription"></div>

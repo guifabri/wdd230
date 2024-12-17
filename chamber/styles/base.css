@@ -143,6 +143,7 @@ img {
     justify-content: center;
     align-items: center;
 }
+
 .galeryImage
  {
     display: grid;
@@ -218,11 +219,12 @@ iframe {
 	margin-top: 2rem;
 }
 
-footer{
+footer *{
     margin-top: 1rem;
-    padding: 2rem;
-    border: var(--color2) 1px ridge;
+    padding: 0.2rem;
+    text-align: center;
     border-radius: 25px 25px 25px 25px;
+    font-size: 25px;
     -webkit-border-radius: 25px 25px 25px 25px;
     -moz-border-radius: 25px 25px 25px 25px;
     -ms-border-radius: 25px 25px 25px 25px;
@@ -233,6 +235,7 @@ footer{
 }
 .thankyouMain section {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     background-color: var(--color4);
     border: 6px var(--color1) solid;
     border-radius: 15px;
@@ -334,6 +337,24 @@ footer{
 td {
     background-color: var(--color4);
     border: 2px var(--color1) ridge;
-    
+    font-size: 30px;
+}
+/* From Uiverse.io by hakemdamer222 */ 
+
+.link-join:focus, .link-join {
+  font-size: 1.2rem;
+  border-radius: 0.7rem;
+  background-image: linear-gradient(rgb(214, 202, 254), rgb(158, 129, 254));
+  border: 2px solid rgb(50, 50, 50);
+  border-bottom: 5px solid rgb(50, 50, 50);
+  box-shadow: 0px 1px 6px 0px rgb(158, 129, 254);
+  transform: translate(0, -3px);
+  cursor: pointer;
+  transition: 0.2s;
+  transition-timing-function: linear;
 }
 
+.link-join:active, .link-join:active {
+  transform: translate(0, 0);
+  border-bottom: 2px solid rgb(50, 50, 50);
+}

@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    
     const banner = document.getElementById("banner");
     const closeButton = document.getElementById("close-banner");
 
@@ -12,4 +13,5 @@ document.addEventListener("DOMContentLoaded", function () {
     closeButton.addEventListener("click", function () {
         banner.classList.add("hidden");
     });
+   
 });

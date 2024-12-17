@@ -1,6 +1,7 @@
 function updateDate() {
     const today =new Date()
-    document.getElementById("timestamp").innerHTML = today;
+    document.getElementById("timestamp").value = today;
+    
     
 }
 

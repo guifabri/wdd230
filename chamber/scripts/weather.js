@@ -111,7 +111,29 @@ const forecastContainer = document.getElementById("forecast");
     const dayDiv = createDayDivs(i);
     forecastContainer.appendChild(dayDiv);
   }
+function createForecastElements() {
+    const forecastContainer = document.getElementById("forecast");
 
+    for (let i = 1; i <= 3; i++) {
+      const dayDiv = document.createElement("div");
+      dayDiv.id = `day${i}`;
+
+      const weekdayDiv = document.createElement("div");
+      weekdayDiv.id = `weekday${i}`;
+
+      const dayIconDiv = document.createElement("div");
+      dayIconDiv.id = `dayIcon${i}`;
+
+      const dayTempDiv = document.createElement("div");
+      dayTempDiv.id = `dayTemp${i}`;
+
+      dayDiv.appendChild(weekdayDiv);
+      dayDiv.appendChild(dayIconDiv);
+      dayDiv.appendChild(dayTempDiv);
+
+      forecastContainer.appendChild(dayDiv);
+    }
+  }
   // Llamada a la API y relleno de datos
   fetch(apiURL)
     .then((response) => response.json())
@@ -132,4 +154,5 @@ const forecastContainer = document.getElementById("forecast");
       });
     })
     .catch((error) => console.error("Error al obtener los datos:", error));
+createForecastElements();
 fetch(apiURL);

@@ -52,6 +52,7 @@
     }
     .hero {
         font-size: 2rem;
+        column-gap: 1rem;
     }
     .hero div {
         margin: auto;

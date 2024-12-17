@@ -94,7 +94,7 @@ nav .active {
 }
 .menu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     grid-column: 1/4;
     grid-row: 2/3;
 }
@@ -138,10 +138,9 @@ img {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-.card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card, .card img{
+   height: 100%;
+   object-fit: cover;
 }
 
 .galeryImage
@@ -233,7 +232,7 @@ footer *{
 #membershipDescription {
   margin-top: 2rem;
 }
-.thankyouMain section {
+.thankYouMain section {
     margin-top: 2rem;
     margin-bottom: 2rem;
     background-color: var(--color4);

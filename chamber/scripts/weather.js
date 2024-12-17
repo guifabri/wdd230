@@ -83,20 +83,53 @@ function formatDate(dateStr) {
 }
 
 // Obtener y procesar datos
-fetch(apiURL)
-  .then(response => response.json())
-  .then(data => {
-    // Filtrar datos para obtener solo las previsiones diarias a mediodía (12:00)
-    const dailyData = data.list.filter(item => item.dt_txt.includes("12:00:00")).slice(0, 3);
+const forecastContainer = document.getElementById("forecast");
 
-    // Rellenar datos en el HTML
-    dailyData.forEach((day, index) => {
-      if (days[index]) {
-        days[index].querySelector("#weekday").textContent = formatDate(day.dt_txt);
-        days[index].querySelector("#dayIcon").innerHTML = `<img src="${getWeatherIcon(day.weather[0].icon)}" alt="${day.weather[0].description}">`;
-        days[index].querySelector("#dayTemp").innerHTML = `${Math.round(day.main.temp)}°F <br> RealFeel ${Math.round(day.main.feels_like)}°F`;
-      }
-    });
-  })
-  .catch(error => console.error("Error al obtener los datos:", error));
+  // Función para crear dinámicamente los elementos de cada día
+  function createDayDivs(dayIndex) {
+    const dayDiv = document.createElement("div");
+    dayDiv.id = `day${dayIndex}`;
+
+    const weekdayDiv = document.createElement("div");
+    weekdayDiv.id = `weekday${dayIndex}`;
+
+    const dayIconDiv = document.createElement("div");
+    dayIconDiv.id = `dayIcon${dayIndex}`;
+
+    const dayTempDiv = document.createElement("div");
+    dayTempDiv.id = `dayTemp${dayIndex}`;
+
+    dayDiv.appendChild(weekdayDiv);
+    dayDiv.appendChild(dayIconDiv);
+    dayDiv.appendChild(dayTempDiv);
+
+    return dayDiv;
+  }
+
+  // Crear dinámicamente los días (1, 2, 3)
+  for (let i = 1; i <= 3; i++) {
+    const dayDiv = createDayDivs(i);
+    forecastContainer.appendChild(dayDiv);
+  }
+
+  // Llamada a la API y relleno de datos
+  fetch(apiURL)
+    .then((response) => response.json())
+    .then((data) => {
+      const dailyData = data.list
+        .filter((item) => item.dt_txt.includes("12:00:00"))
+        .slice(0, 3);
+
+      dailyData.forEach((day, index) => {
+        const dayIndex = index + 1;
+        document.getElementById(`weekday${dayIndex}`).textContent = formatDate(day.dt_txt);
+        document.getElementById(`dayIcon${dayIndex}`).innerHTML = `<img src="${getWeatherIcon(
+          day.weather[0].icon
+        )}" alt="${day.weather[0].description}">`;
+        document.getElementById(`dayTemp${dayIndex}`).innerHTML = `${Math.round(
+          day.main.temp
+        )}°F <br> RealFeel ${Math.round(day.main.feels_like)}°F`;
+      });
+    })
+    .catch((error) => console.error("Error al obtener los datos:", error));
 fetch(apiURL);

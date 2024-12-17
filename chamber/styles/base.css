@@ -244,6 +244,7 @@ footer{
     margin-top: 2rem;
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 2rem;
 }
 .grid-view{
     display: grid;
@@ -329,5 +330,10 @@ footer{
     cursor: pointer;
     font-weight: bold;
     color: var(--color5);
+}
+td {
+    background-color: var(--color4);
+    border: 2px var(--color1) ridge;
+    
 }
 

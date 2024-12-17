@@ -22,44 +22,74 @@ async function fetchMembers() {
 function displayMembers(membersData, view) {
     container.innerHTML = ""; // Limpiar contenedor
 
-    membersData.forEach(member => {
-        const card = document.createElement("div");
-        card.classList.add("member-card");
+    if (view === "grid") {
+        membersData.forEach(member => {
+            const card = document.createElement("div");
+            card.classList.add("member-card");
 
-        // Crear lista de enlaces para todos los `websiteURLs`
-        const linksHTML = member.websiteURLs
-            .map(url => `<a href="${url}" target="_blank">${url}</a>`)
-            .join(" | ");
-        if(view==="grid"){
-            card.innerHTML = `
-            <img src="${member.icon}" alt="${member.name}">
-            <h3>${member.name}</h3>
-            <p><strong>Address:</strong> ${member.addresses.join(", ")}</p>
-            <p><strong>Phone:</strong> ${member.phoneNumbers.join(", ")}</p>
-            <p><strong>Websites:</strong> ${linksHTML}</p>
-            <p><strong>Membership:</strong> ${member.membershipLevel}</p>
-            <p><strong>Industry:</strong> ${member.industry}</p>
-            `;
-        }
-        else{
-            card.innerHTML = `
-            <div class="list-card">
-                <span><img src="${member.icon}" alt="${member.name}"></span>
-                <span> --- ${member.name}</span>
-                <span> --- ${member.addresses.join(", ")}</span>
-                <span> --- ${member.phoneNumbers.join(", ")}</span>
-                <span> --- ${linksHTML}</span>
-                <span> --- ${member.membershipLevel}</span>
-                <span> --- ${member.industry}</span>
-            </div>
-            `;
-        }
+            const linksHTML = member.websiteURLs
+                .map(url => `<a href="${url}" target="_blank">${url}</a>`)
+                .join(" | ");
 
-        container.appendChild(card);
-    });
+            card.innerHTML = `
+                <img src="${member.icon}" alt="${member.name}">
+                <h3>${member.name}</h3>
+                <p><strong>Address:</strong> ${member.addresses.join(", ")}</p>
+                <p><strong>Phone:</strong> ${member.phoneNumbers.join(", ")}</p>
+                <p><strong>Websites:</strong> ${linksHTML}</p>
+                <p><strong>Membership:</strong> ${member.membershipLevel}</p>
+                <p><strong>Industry:</strong> ${member.industry}</p>
+            `;
+            container.appendChild(card);
+        });
+    } else {
+        // Crear tabla
+        const table = document.createElement("table");
+        table.classList.add("member-table");
+
+        // Encabezados de la tabla
+        table.innerHTML = `
+            <thead>
+                <tr>
+                    <th>Logo</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                    <th>Websites</th>
+                    <th>Membership</th>
+                    <th>Industry</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        `;
+        const tbody = table.querySelector("tbody");
+
+        // Filas de la tabla
+        membersData.forEach(member => {
+            const linksHTML = member.websiteURLs
+                .map(url => `<a href="${url}" target="_blank">${url}</a>`)
+                .join(" | ");
+
+            const row = `
+                <tr>
+                    <td><img src="${member.icon}" alt="${member.name}" width="50"></td>
+                    <td>${member.name}</td>
+                    <td>${member.addresses.join(", ")}</td>
+                    <td>${member.phoneNumbers.join(", ")}</td>
+                    <td>${linksHTML}</td>
+                    <td>${member.membershipLevel}</td>
+                    <td>${member.industry}</td>
+                </tr>
+            `;
+            tbody.insertAdjacentHTML("beforeend", row);
+        });
+
+        container.appendChild(table);
+    }
 
     container.className = view === "grid" ? "grid-view" : "list-view";
 }
+
 
 // Event Listeners para alternar vistas
 function addListeners(membersData) {
